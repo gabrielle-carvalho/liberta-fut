@@ -1,0 +1,304 @@
+/* Epilogue */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&family=Roboto:wght@500&display=swap');
+/* Epilogue */
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/* Roboto */
+
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-column-gap: 600px;
+    background-color: #ffffff37;  
+}
+header img{
+    margin-top: 30px;
+    width: 147px;
+    height: 86px;
+    margin-right: 15px;
+    }
+.carrinho{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: center;
+}
+#logoo{
+    position: relative;
+    justify-content: center;
+    margin: 0px;
+} 
+#user{
+    border-radius: 50px;
+    background-color: #01b119;
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+} 
+section img{
+    width: 50px;
+    height: 46px;
+    right: 50%;
+    cursor: pointer;
+}
+
+header section{
+    display: flex;
+    gap: 50px;
+}
+nav{
+    font-family: 'Epilogue';
+    font-size: 17px;
+    width: max-content;
+    display: flex;
+    column-gap: 17%;
+    white-space: nowrap;
+    align-items: center;
+}
+nav a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #171A1F;
+    height: min-content;
+    font-weight: 300;
+}
+nav a:hover{
+    color: rgb(30, 140, 20);
+    
+}
+
+/* BANNER */
+
+.banner{
+    background-image: url("https://img.freepik.com/fotos-gratis/jogadores-de-futebol-em-acao-no-estadio-profissional_654080-1820.jpg?w=1380&t=st=1686169645~exp=1686170245~hmac=730aaba037553d951805ee4114d5030f5ecc017f95e1100d537c9139c321d1c3");
+    background-repeat:round;
+    width: 2020px;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    background-attachment: fixed;
+}
+
+.banner img{
+    width: 500px;
+    height: 100%;
+}
+.banner section{
+    display: flex;
+    flex-direction: column;
+    font-size: 100px;
+    color: #171A1F;
+    font-family: 'Roboto';
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* FIM DO BANNER */
+h1{
+    margin-top: 100px;
+    color: #242730;
+    font-family: 'roboto';
+    font-size: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.nossosprod section{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 75%;
+    row-gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.produtos .camisas{
+    width: 276px;
+    height: 334px;
+    cursor: pointer;
+}
+
+.camisas:hover{
+    opacity: 80%;
+}
+
+.produtos h1{
+    margin-top: 0px;
+    font-size: 35px;
+    justify-content: start;
+
+}
+.produtos h3{
+    align-items: end;
+    justify-content: start;
+    font-family: 'Roboto';
+    font-size: 18px;
+    height: min-content;
+}
+.produtos h5{
+    align-items: center;
+    justify-content: center;
+    font-family: 'Epilogue';
+    opacity: 90%;
+    height: min-content;
+}
+
+.produtos{
+    position: relative;
+    width: 276px;
+    
+    
+    row-gap: 20px;
+    
+    padding: 30px;
+    height: 464px;
+
+    display: grid;
+    grid-template-rows: 334px 10px 30px 1px;
+
+}
+.produtos .kkkk{
+    position: absolute;
+    bottom: 35px;
+    left: 270px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer h2{
+    font-family: 'Roboto';
+}
+
+footer h4{
+    font-family: 'Epilogue';
+    font-size: 14px;
+}
+
+footer a{
+    font-family: 'Epilogue';
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer{
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+    width: 100%;
+    background-color: #1E2128;
+
+}
+
+.conteudo{
+    width: 85%;
+    height: 75%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 900px;
+}
+
+.conteudo h4{
+    cursor: pointer;
+}
+
+.conteudo section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.receba{
+    display: flex;
+    row-gap: 0px;
+    align-items: end;
+    margin-right: 200px;
+    flex-direction: column;
+}
+.receba h2{
+    margin-bottom: 30px;    
+}
+
+.receba input{
+    font-family: 'Epilogue';
+    border-radius: 6px;
+    border-style: solid;
+    border-color: rgba(240, 255, 255, 0.432);
+    font-size: 20px;
+    width: 250px;
+    height: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+}
+
+.ensira{
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+}
+
+.receba h2{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 18px;
+    margin-bottom: 10px;
+    
+}
+
+.ensira button{
+    color: white;
+    font-size: 17px;
+    border-radius: 4px;
+    background-color: #043f28;
+    border-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.icones{
+    display: flex;
+    margin-bottom: 10px;
+    column-gap: 10px;
+    cursor: pointer;
+}

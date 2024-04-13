@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberta Fut</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#produtos">Loja</a>
+            <a href="#famosos">Famosos</a>
+            <a href="#historia">Nosso Objetivo</a>
+        </nav>
+        <img id="logoo" src="imgs/icones/logo.png" alt="Logo">
+        <section>
+            <div class="carrinho">
+                <a href="profile.html">
+               <img id="user" src="imgs/icones/icone_usuario.png" alt="">
+            </a>
+                <a href="carrinho.html">
+                    <img src="imgs/icones/Button 1.png">
+                </a>
+
+                
+            </div>
+           
+        </section>
+    </header>
+
+    <div class="banner">
+        <section>
+            <h6>O Presente Para <br>
+                 Seu Campo
+            </h6>
+            <div class="buton">
+            <a href="produtos.html"><button>Compre Agora</button></a>
+
+            </div>
+        </section>
+        <img src="imgs/neymar.png" alt="">
+    </div>
+
+    <h1 id="produtos"> Nossos Produtos </h1>
+
+    <div  class="nossosprod">
+        <div class="butoes">
+            <button>Mais Vendidos</button>
+            <nav id="branco"> <a href= "produtos.html">Mais Produtos</a></nav>
+        </div>
+
+        <section>
+            <div class="produtos">
+                <img class="camisas" src="imgs/neymar.png" alt="neymar">
+                <h3>Neymar Júnior</h3>
+                <h5>O jogador Neymar em Pessoa</h5>
+                <h1>R$1,5 bilhões</h1>
+                <img  class="kkkk" src="imgs/icones/butao_carrinho.png" alt="carinho">
+            </div>
+
+            <div class="produtos">
+                <img class="camisas" src="imgs/camisa1.png" alt="neymar">
+                <h3>Camisa Torcedor do Fluminense</h3>
+                <h5>Demonstre seu amor e orgulho de ser Fluzão e marque esse golaço!</h5>
+                <h1>R$140</h1>
+                <img  class="kkkk" src="imgs/icones/butao_carrinho.png" alt="carinho">
+            </div>
+
+            <div class="produtos">
+                <img class="camisas" src="imgs/camisa2.png" alt="neymar">
+                <h3>Camisa Torcedor do Flamengo</h3>
+                <h5>Feito 100% de materiais reciclados, sendo uma das soluções para diminuir o lixo.</h5>
+                <h1>R$210</h1>
+                <img  class="kkkk" src="imgs/icones/butao_carrinho.png" alt="carinho">
+            </div>
+
+            <div class="produtos">
+                <img class="camisas" src="imgs/camisa3.png" alt="neymar">
+                <h3>Camisa Torcedor do Corinthias</h3>
+                <h5>A Camisa Corinthians é semelhante ao modelo que os craques do time usam!</h5>
+                <h1>R$100</h1>
+                <img  class="kkkk" src="imgs/icones/butao_carrinho.png" alt="carinho">
+            </div>
+
+        </section>
+    </div>
+    
+
+    <div class="nossahistoria">
+        <div class="historia">
+            <h1 id="historia">Nosso Objetivo</h1>
+                <p>Com o intuito de fazer algo diferente, foi decidido a criação de um site, com o objetivo de vender produtos esportivos, dos mais variados tipos e de alta qualidade.</p>          
+        </div>
+        
+        <img src="imgs/nossa_historia.png" alt="">
+    </div>
+
+    <h1 id="famosos">Parceiros Famosos</h1>
+    <div class="insta">
+    <h4>@liberta_fut</h4>
+</div>
+
+    <div class="parceiros">
+        <img src="imgs/img1.jpeg" alt="">
+        <img src="imgs/img2.jpeg" alt="">
+        <img src="imgs/img3.jpeg" alt="">
+    </div>
+
+    <div class="instas">
+        <h1>@neymarjr</h1>
+        <h1>@ronaldo</h1>
+        <h1>@neymarjr</h1>
+    </div>
+    
+    <footer>
+        <div class="conteudo">
+            <section>
+                <h2>Sobre Nós</h2>
+                <a href="index.html">Home</a>
+                <a href="#produtos">Loja</a>
+                <a href="politica.html">Politica de privacidade</a>
+            </section>
+
+            <section>
+                <h2>Ajuda</h2>
+                <h4>Rastrear encomenda</h4>
+                <h4>SAC</h4>
+            </section>
+            <section>
+                <h2>Contato</h2>
+                <h4>Tel: (+1) 123 456 7893</h4>
+                <h4>Email: liberta.fut@gmail.com</h4>
+            </section>
+
+            <div class="receba">
+                <h2>Receba novas promoções</h2>
+                <div class="icones">
+                    <img src="imgs/icones/facebook.png" alt="">
+                    <img src="imgs/icones/linkedin.png" alt="">
+                    <img src="imgs/icones/twitter.png" alt="">
+                    <img src="imgs/icones/youtube.png" alt="">
+                </div>
+                <div class="ensira">
+                    <input id="email" type="text" placeholder="Insira seu e-mail" required>
+                    <input id="senha" type="password" placeholder="Insira sua senha" required>
+                    <input id="repetirSenha" type="password" placeholder="repetir senha" required>
+                    <button onclick="return validarFormulario()" type="button">Inscreva-se</button>
+                    <div id="mensagemErro"></div>
+                    <div id="mensagemErro2"></div>
+                    <div id="boasvindas"></div>
+
+                    <script src="javascript/formulario.js"></script>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
