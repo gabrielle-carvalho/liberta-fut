@@ -12,67 +12,66 @@
         <nav>
             <a href="index.html">Home</a>
         </nav>
-        <img id="logoo" src="  logo.png" alt="Logo">
+        <img id="logoo" src="img/logo.png" alt="Logo">
         <div class="carrinho">
             <a href="profile.html">
-           <img id="user" src="  icone_usuario.png" alt="">
-        </a>
+                <img id="user" src="img/icone_usuario.png" alt="Ícone de Usuário">
+            </a>
             <a href="carrinho.html">
-                <img src="  Button 1.png">
+                <img src="img/Button 1.png" alt="Botão de Carrinho">
             </a>
         </div>
     </header>
 
     <h1>Cadastre-se</h1>
-<div class="form">
-    <input id="email" type="text" placeholder="Insira seu e-mail" required>
-    <input id="senha" type="password" placeholder="Insira sua senha" required>
-    <input id="repetirSenha" type="password" placeholder="repetir senha" required>
-    <button onclick="return validarFormulario()" type="button">Cadastre-se</button>
-    <div id="mensagemErro"></div>
-    <div id="mensagemErro2"></div>
-    <div id="boasvindas"></div>
-    <script src="  formulario.js"></script>
-   
-</div>
-
-
-<a href="https://accounts.google.com/v3/signin/identifier?dsh=S604725361%3A1686571293908897&ffgf=1&hl=pt-BR&ifkv=Af_xneE7W56u9uQ_A1XHE8cj774bBeOYAU7bjc3qDlm3d6Oo2hagCFWDLZBqHw2sXm60dL2D9qo63Q&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
-    <img src="  Gmail.sgv.png" alt="">
-    
- </a>
- <h2>Entrar com Gmail</h2>
-
-<footer>
-    <div class="conteudo">
-        <section>
-            <h2>Sobre Nós</h2>
-            <a href="index.html">Home</a>
-            <a href="#produtos">Loja</a>
-            <a href="politica.html">Politica de privacidade</a>
-        </section>
-
-        <section>
-            <h2>Ajuda</h2>
-            <h4>Rastrear encomenda</h4>
-            <h4>SAC</h4>
-        </section>
-        <section>
-            <h2>Contato</h2>
-            <h4>Tel: (+1) 123 456 7893</h4>
-            <h4>Email: liberta.fut@gmail.com</h4>
-        </section>
-
-        <div class="receba">
-            
-            <div class="icones">
-                <img src="  facebook.png" alt="">
-                <img src="  linkedin.png" alt="">
-                <img src="  twitter.png" alt="">
-                <img src="  youtube.png" alt="">
-            </div>
-     
-        </div>
+    <div class="form">
+        <input id="email" type="text" placeholder="Insira seu e-mail" required>
+        <input id="senha" type="password" placeholder="Insira sua senha" required>
+        <input id="repetirSenha" type="password" placeholder="Repetir senha" required>
+        <button type="button" onclick="return validarFormulario()">Cadastre-se</button>
+        <div id="mensagemErro"></div>
+        <div id="mensagemErro2"></div>
+        <div id="boasvindas"></div>
     </div>
-    
-</footer>
+
+    <a href="https://accounts.google.com/v3/signin/identifier">
+        <img src="img/Gmail.sgv.png" alt="Entrar com o Gmail">
+    </a>
+    <h2>Entrar com Gmail</h2>
+
+    <footer>
+        <div class="conteudo">
+            <section>
+                <h2>Sobre Nós</h2>
+                <a href="index.html">Home</a>
+                <a href="#produtos">Loja</a>
+                <a href="politica.html">Política de Privacidade</a>
+            </section>
+
+            <section>
+                <h2>Ajuda</h2>
+                <h4>Rastrear Encomenda</h4>
+                <h4>SAC</h4>
+            </section>
+
+            <section>
+                <h2>Contato</h2>
+                <h4>Tel: (+1) 123 456 7893</h4>
+                <h4>Email: liberta.fut@gmail.com</h4>
+            </section>
+
+            <div class="receba">
+                <div class="icones">
+                    <img src="img/facebook.png" alt="Facebook">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                    <img src="img/twitter.png" alt="Twitter">
+                    <img src="img/youtube.png" alt="YouTube">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ✅ Corrigido: JavaScript carregado no final do body -->
+    <script src="javascript/formulario.js"></script>
+</body>
+</html>

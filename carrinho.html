@@ -31,79 +31,77 @@
 
     </style>
 </head>
+
 <body>
- <div class="head">
-    <header>
-        <nav>
-            <a href="index.html">Voltar</a>
-        </nav>
-        <img id="logoo" src="icones/logo.png" alt="Logo">
-
-    </header>
-</div>
-    <body>
-    
-    <div class="car">
-        <img  class="car" src="car.png" alt="carinho">
+    <div class="head">
+        <header>
+            <nav>
+                <a href="index.html">Voltar</a>
+            </nav>
+            <img id="logoo" src="icones/logo.png" alt="Logo">
+        </header>
     </div>
-        <H1>Seu carrinho está vazio</H1>
-        <div class="compraagr">
-        <a href="produtos.html"><button>Comece a Comprar Agora</button></a>
-        </div>
-        </div>
-   
-    </body>
 
+    <div id="conteudoCarrinho" class="car" style="flex-direction: column;">
+        <!-- Conteúdo do carrinho será inserido aqui via JS -->
+    </div>
 
-    <footer>
-        <div class="conteudo">
-            <section>
-                <h2>Sobre Nós</h2>
-                <a href="index.html">Home</a>
-                <a href="#produtos">Loja</a>
-                <a href="politica.html">Politica de privacidade</a>
-            </section>
+    <div class="compraagr" style="margin-top: 20px;">
+        <a href="produtos.html"><button>Continuar Comprando</button></a>
+        <button onclick="limparCarrinho()">Limpar Carrinho</button>
+    </div>
 
-            <section>
-                <h2>Ajuda</h2>
-                <h4>Rastrear encomenda</h4>
-                <h4>SAC</h4>
-            </section>
-            <section>
-                <h2>Contato</h2>
-                <h4>Tel: (+1) 123 456 7893</h4>
-                <h4>Email: liberta.fut@gmail.com</h4>
-            </section>
+    <script>
+        function exibirCarrinho() {
+            const container = document.getElementById("conteudoCarrinho");
+            const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-            <div class="receba">
-                <h2>Receba novas promoções</h2>
-                <div class="icones">
-                    <img src="imgs/icones/facebook.png" alt="">
-                    <img src="imgs/icones/linkedin.png" alt="">
-                    <img src="imgs/icones/twitter.png" alt="">
-                    <img src="imgs/icones/youtube.png" alt="">
-                </div>
-                <div class="ensira">
-                    <input id="email" type="text" placeholder="Insira seu e-mail" required>
-                    <input id="senha" type="password" placeholder="Insira sua senha" required>
-                    <input id="repetirSenha" type="password" placeholder="repetir senha" required>
-                    <button onclick="return validarFormulario()" type="button">Inscreva-se</button>
-                    <div id="mensagemErro"></div>
-                    <div id="mensagemErro2"></div>
-                    <div id="boasvindas"></div>
+            if (carrinho.length === 0) {
+                container.innerHTML = "<h1>Seu carrinho está vazio</h1>";
+                return;
+            }
 
-                    <script src="formulario.js"></script>
-                </div>
-                
-                
-            </div>
+            let total = 0;
 
-            
-            
-        </div>
-        
-        
-        
-    </footer>
+            carrinho.forEach(item => {
+                const precoNumerico = parseFloat(item.preco.replace("R$", "").replace(".", "").replace(",", "."));
+                total += precoNumerico;
+
+                const div = document.createElement("div");
+                div.style.border = "1px solid #ccc";
+                div.style.margin = "10px";
+                div.style.padding = "10px";
+                div.style.display = "flex";
+                div.style.gap = "10px";
+                div.style.alignItems = "center";
+                div.style.background = "#f0f0f0";
+
+                div.innerHTML = `
+                    <img src="${item.imagem}" alt="${item.nome}" style="width: 100px; height: auto;">
+                    <div>
+                        <h2>${item.nome}</h2>
+                        <p>${item.descricao}</p>
+                        <strong>${item.preco}</strong>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+
+            const totalDiv = document.createElement("div");
+            totalDiv.innerHTML = `<h2>Total: R$${total.toFixed(2).replace(".", ",")}</h2>`;
+            totalDiv.style.marginTop = "20px";
+            totalDiv.style.fontWeight = "bold";
+            container.appendChild(totalDiv);
+        }
+
+        function limparCarrinho() {
+            localStorage.removeItem("carrinho");
+            location.reload();
+        }
+
+        window.onload = exibirCarrinho;
+    </script>
 </body>
+
+
 </html>
